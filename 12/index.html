@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display"></div>
+        <div class="textSpace">
+            <form>
+                <label for="yourName">Your name:</label>
+                <input type="text" name="yourName" id="yourName">
+                <label for="message">Your message:</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="button" class="sendMessage" value="send">
+            </form>
+        </div>
+    </div>
+    <h3 style="margin-top: 20px;">//////</h3>
+    <div class="wrapper">
+        <div class="card">
+            <img src="./image/it-юмор-языки-программирования-программирование-geek-7211211.jpeg">
+            <h3>Learning JavaScript: JavaScript Essentials for Modern Application Development</h3>
+            <h5>Ethan Brown</h5>
+            <div class="price">
+                <div class="curPrice">16</div>
+                <span>$</span>
+            </div>
+            <input type="button" class="cardButton" value="Select">
+        </div>
+        <div class="card">
+            <img src="./image/it-юмор-языки-программирования-программирование-geek-7211211.jpeg">
+            <h3>You Don't Know JS: <br> Scope & Closures</h3>
+            <h5 style="margin-bottom: 45px;">Kyle Simpson</h5>
+            <div class="price">
+                <div class="curPrice">20</div>
+                <span>$</span>
+            </div>
+            <input type="button" class="cardButton" value="Select">
+        </div>
+        <div class="card">
+            <img src="./image/it-юмор-языки-программирования-программирование-geek-7211211.jpeg">
+            <h3>JavaScript and JQuerry: <br> Interactive Front-End Web Development</h3>
+            <h5>Jon Duckett</h5>
+            <div class="price">
+                <div class="curPrice">22</div>
+                <span>$</span>
+            </div>
+            <input type="button" class="cardButton" value="Select">
+        </div>
+    </div>
+    
+    <div class="cart">
+        <div class="close">
+            <div class="closeBtn"></div>
+        </div>
+        <form>
+            <label for="cartName">Book:</label>
+            <input type="text" name="cartName" disabled>
+            <label for="cartQuantity">Quantity:</label>
+            <input type="number" name="cartQuantity" placeholder="Required" min="1" value="1">
+            <label for="cartOrder">Name:</label>
+            <input type="text" name="cartOrder" placeholder="Required">
+            <label for="cartAdress">Delivery adress:</label>
+            <textarea type="text" name="cartAdress" placeholder="Required"></textarea>
+            <label for="cartDate">Delivery date:</label>
+            <input type="text" name="cartDate" placeholder="Required">
+            <label for="cartComment">Comment:</label>
+            <textarea name="cartComment" required style="height: 120px;"></textarea>
+            <div class="totalPrice">Total price: <h2></h2></div>
+            <div class="div"></div>
+            <input type="button" value="Buy">
+        </form>
+    </div>
+    <div class="result">
+        <div class="close">
+            <div class="closeBtn"></div>
+        </div>
+        <h3 style="text-align: start;">Result:</h3>
+        <div class="resultAnswer"></div>
+    </div>
+    
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

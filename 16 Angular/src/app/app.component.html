@@ -1,0 +1,17 @@
+
+<div class="game">
+    <div style="margin-bottom: 20px;">
+        <button style="padding: 20px; font-size: 30px;"
+            (click)="handlerStart($event)"
+            [disabled]="isStart"
+        >Start</button>
+    </div>
+
+    <div class="card_list" *ngIf="cards.length === 8">
+        <app-card 
+            *ngFor="let card of cards"
+            [card]="card"
+            (eventClick)="handlerSelect()"
+        ></app-card>
+    </div>
+</div>

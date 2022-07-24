@@ -1,0 +1,10 @@
+<div class="card"
+    *ngIf="card"
+    [ngClass]="{
+        'card_game': !card.isShow
+    }"
+    [ngStyle]="card.isShow ? {'background-color': card.color, 'outline': 'thick double black'} : {}"
+    (click)="handleClick()"
+>
+    
+</div>

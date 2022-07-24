@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <audio >
+        <source class="musicList1" src="./assets/Mount & Noize Generation - Around The World.mp3">
+        <source class="musicList2" src="./assets/S3RL - Feel the Melody (feat. Sara).mp3">
+    </audio>
+    <div class="player">
+        <div class="info"></div>
+        <div class="time">
+            <div class="timeCheck"></div>
+            <div class="timeCheck"></div>
+        </div>
+        <div class="scrollBar">
+            <progress class="progBar" value="" max=""></progress>
+        </div>
+        <div class="control">
+            <div class="controlL">
+
+            </div>
+            <div class="controlM">
+                <div class="prev button"></div>
+                <div class=" button play"></div>
+                <div class="next button"></div>
+            </div>
+            <div class="controlR">
+                <input type="range" class="volume" orient="vertical" min="0" max="100" value="0">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

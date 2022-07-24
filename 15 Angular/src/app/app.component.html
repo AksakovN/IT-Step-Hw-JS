@@ -1,0 +1,10 @@
+<h1>Drinks</h1>
+<div class="container">
+    <app-card  *ngFor="let drink of drinksData" [card]="drink"></app-card>
+    <div class="wrapper" *ngIf="isShowDesc" (eventClick)="handlerClick()">
+        <app-description [descr]="drinksData" [idSwitch]="idSwitch"></app-description>
+    </div>  
+</div>
+
+
+

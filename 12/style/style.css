@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: auto;
+  width: 1000px;
+  height: 98vh;
+  padding: 5px;
+  background-color: grey;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+.container .display {
+  width: 100%;
+  height: 75%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.container .textSpace {
+  width: 100%;
+  height: 25%;
+  background-color: #fff;
+  border-top: 5px solid grey;
+}
+.container .textSpace form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 100px 900px;
+  row-gap: 20px;
+}
+.container .textSpace form #yourName {
+  width: 99%;
+}
+.container .textSpace form textarea {
+  width: 99%;
+  height: 100px;
+  resize: none;
+}
+.container .textSpace form [type=button] {
+  width: 994px;
+  height: 30px;
+  margin: 0 3px 0 3px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.message {
+  width: 97%;
+  min-height: 100px;
+  background-color: #fff;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.messageBody {
+  margin: 3px;
+  width: 99%;
+  height: max-content;
+  font-size: 18px;
+  font-weight: 600;
+}
+.messageName {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: grey;
+  display: flex;
+}
+.wrapper .card {
+  width: 31%;
+  height: 95%;
+  padding: 5px;
+  margin: 10px;
+  background-color: #fff;
+}
+.wrapper .card img {
+  width: 100%;
+}
+.wrapper .card h3 {
+  text-align: start;
+}
+.wrapper .card h5 {
+  font-weight: normal;
+}
+.wrapper .card .price {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper .card [type=button] {
+  width: 100%;
+}
+.cart {
+  width: 400px;
+  height: max-content;
+  background-color: #cfc8c8;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  margin-top: -250px;
+  margin-left: -200px;
+  padding: 10px;
+  display: none;
+}
+.cart .close {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.cart .close .closeBtn {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  position: relative;
+}
+.cart .close .closeBtn::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotateZ(45deg);
+  top: 11px;
+  left: 4px;
+}
+.cart .close .closeBtn::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotateZ(225deg);
+  top: -4px;
+  left: 4px;
+}
+.cart .close .closeBtn:hover {
+  transform: scale(0.9);
+}
+.cart form {
+  display: grid;
+  grid-template-columns: 150px 250px;
+  row-gap: 20px;
+}
+.cart form textarea {
+  resize: none;
+  height: 100px;
+}
+.cart form [type=button] {
+  width: 400px;
+}
+.result {
+  width: 400px;
+  height: max-content;
+  background-color: #cfc8c8;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  margin-top: -250px;
+  margin-left: -200px;
+  padding: 10px;
+  display: none;
+}
+.result .close {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.result .close .closeBtn {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  position: relative;
+}
+.result .close .closeBtn::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotateZ(45deg);
+  top: 11px;
+  left: 4px;
+}
+.result .close .closeBtn::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotateZ(225deg);
+  top: -4px;
+  left: 4px;
+}
+.result .close .closeBtn:hover {
+  transform: scale(0.9);
+}
+.result .resultAnswer {
+  width: 100%;
+  height: max-content;
+  border: 1px solid black;
+}

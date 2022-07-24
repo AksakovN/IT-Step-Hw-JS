@@ -1,0 +1,44 @@
+<div class="background"></div>
+<div class="wrapper">
+    <div class="description">
+        <div class="close"><input type="button" value="X" (click)="handlerClick()"></div>
+        <div class="desc_inner">
+            <div class="desc_image">
+                <img [src]="descr[idSwitch].strDrinkThumb" alt="drink">
+                <h2>{{descr[idSwitch].strDrink}}</h2>
+            </div>
+            <div class="desc_body">
+                <h3>How to make:</h3>
+                <p>{{descr[idSwitch].strInstructions}}</p>
+                <hr>
+                <div class="innerFlex">
+                    <div class="ingredients">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>{{descr[idSwitch].strIngredient1}}</li>
+                            <li>{{descr[idSwitch].strIngredient2}}</li>
+                            <li>{{descr[idSwitch].strIngredient3}}</li>
+                            <li>{{descr[idSwitch].strIngredient4}}</li>
+                            <li>{{descr[idSwitch].strIngredient5}}</li>
+                            <li>{{descr[idSwitch].strIngredient6}}</li>
+                            <li>{{descr[idSwitch].strIngredient7}}</li>
+                        </ul>
+                    </div>
+                    <div class="measures">
+                        <h3>Measures:</h3>
+                        <ul>
+                            <li>{{descr[idSwitch].strMeasure1}}</li>
+                            <li>{{descr[idSwitch].strMeasure2}}</li>
+                            <li>{{descr[idSwitch].strMeasure3}}</li>
+                            <li>{{descr[idSwitch].strMeasure4}}</li>
+                            <li>{{descr[idSwitch].strMeasure5}}</li>
+                            <li>{{descr[idSwitch].strMeasure6}}</li>
+                            <li>{{descr[idSwitch].strMeasure7}}</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
